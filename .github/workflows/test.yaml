@@ -1,6 +1,6 @@
 name: Call a reusable workflow test-backend
 on:
-  pull:
+  push:
     branches: [ "main"  ]
 
   jobs:
