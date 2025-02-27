@@ -4,7 +4,7 @@ on:
     branches: [ "main"  ]
 
   jobs:
-    test-backend:
+    call-workflow-passing-data:
       permissions:
         contents: read
         pull-request: write
