@@ -9,7 +9,7 @@ jobs:
     permissions:
       contents: read
       pull-request: write
-    uses: finvelox-devops-test/github-devops-actions/.github/workflows/test-backend.yaml
+    uses: finvelox-devops-test/github-devops-actions/.github/workflows/test-backend.yaml@v1
     with:
       config-path: .github/labeler.yml
     secrets:
