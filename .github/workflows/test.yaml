@@ -15,4 +15,3 @@ jobs:
       namespace: $DEPLOY_NAME_SPACE 
     secrets: 
       kubeconfig: $KUBE_CONFIG
-
