@@ -6,7 +6,6 @@ on:
 
 env:
   DEPLOY_NAME_SPACE: e-dekont-test
-env:
   KUBE_CONFIG: test
 
 jobs:
