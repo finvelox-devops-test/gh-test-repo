@@ -4,7 +4,13 @@ on:
   push:
     branches: [ "main" ]
 
+env:
+  DEPLOY_NAME_SPACE: e-dekont-test
+
 jobs:
   call-workflow-in-github-devops-actions:
     uses: finvelox-devops-test/github-devops-actions/.github/workflows/test-frontend.yaml@main
-
+    with:
+      namespace: $DEPLOY_NAME_SPACE 
+    secrets: 
+      kubeconfig: ${{ secrets.CS_TEST_K8S_CONFIG }}
