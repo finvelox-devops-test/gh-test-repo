@@ -6,6 +6,8 @@ on:
 
 env:
   DEPLOY_NAME_SPACE: e-dekont-test
+env:
+  KUBE_CONFIG: test
 
 jobs:
   call-workflow-in-github-devops-actions:
@@ -13,4 +15,4 @@ jobs:
     with:
       namespace: $DEPLOY_NAME_SPACE 
     secrets: 
-      kubeconfig: ${{ secrets.CS_TEST_K8S_CONFIG }}
+      kubeconfig: $KUBE_CONFIG
