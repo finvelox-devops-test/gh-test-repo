@@ -5,10 +5,8 @@ on:
     branches: [ "main" ]
 
 env:
-  DEPLOY_NAME_SPACE: e-dekont-test
+  DEPLOY_NAME_SPACE: "e-dekont-test"
 
 jobs:
   call-workflow-in-github-devops-actions:
     uses: finvelox-devops-test/github-devops-actions/.github/workflows/test-frontend.yaml@main
-    #with:
-     # namespace: $DEPLOY_NAME_SPACE
