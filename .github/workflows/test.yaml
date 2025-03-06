@@ -5,7 +5,7 @@ on:
     branches: [ "main" ]
 
 env:
-  DEPLOY_NAME_SPACE: "e-dekont-test"
+  DEPLOY_NAME_SPACE: e-dekont-test
 
 jobs:
   call-workflow-in-github-devops-actions:
