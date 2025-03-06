@@ -6,12 +6,9 @@ on:
 
 env:
   DEPLOY_NAME_SPACE: e-dekont-test
-  KUBE_CONFIG: test
 
 jobs:
   call-workflow-in-github-devops-actions:
     uses: finvelox-devops-test/github-devops-actions/.github/workflows/test-frontend.yaml@main
     with:
-      namespace: $DEPLOY_NAME_SPACE 
-    secrets: 
-      kubeconfig: $KUBE_CONFIG
+      namespace: $DEPLOY_NAME_SPACE
