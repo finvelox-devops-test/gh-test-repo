@@ -25,3 +25,4 @@ jobs:
     with:
       deploy_name_space: ${{ needs.print.outputs.deploy_name_space }}
       kubeconfig: ${{ secrets.CLUSTER_ADMIN_CONFIG }}
+
