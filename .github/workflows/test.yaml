@@ -18,7 +18,6 @@ jobs:
         run: |
           echo "deploy_name_space: $DEPLOY_NAME_SPACE"
           echo "deploy_name_space=$DEPLOY_NAME_SPACE" >> $GITHUB_OUTPUT
-          echo "kubeconfig: ${{ secrets.CLUSTER_ADMIN_CONFIG }}"
   call-workflow-in-github-devops-actions:
     needs:
       - print
