@@ -1,7 +1,7 @@
 
 name: Call a reusable workflow test-backend
 on:
-  push:
+  pull-request:
     branches: [ "main" ]
 
 env:
