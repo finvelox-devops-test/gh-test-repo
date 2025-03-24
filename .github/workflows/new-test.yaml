@@ -23,7 +23,7 @@ jobs:
       uses: azure/k8s-set-context@v4
       with:
         method: kubeconfig
-        kubeconfig: ${{ secrets.CLUSTER_ADMIN_CONFIG }}
+        kubeconfig: ${{ secrets.CLUSTER_ADMIN_CONFIG_TEST }}
     - name: Get kubernetes pods
       run: |
         echo "kubectl get po -n ${{ inputs.deploy_name_space }}"
