@@ -4,7 +4,7 @@ on:
     branches: [ "main" ]
 
 env: 
-  TEST_NAME_SPACE: e-dekont-test
+  TEST_NAME_SPACE: default
 
 jobs:
   build:
