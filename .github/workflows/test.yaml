@@ -28,6 +28,3 @@ jobs:
     secrets: 
       kubeconfig: ${{ secrets.CLUSTER_ADMIN_CONFIG }}
 
-
-
-
