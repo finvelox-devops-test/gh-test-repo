@@ -24,7 +24,8 @@ jobs:
       - print
     uses: finvelox-devops-test/github-devops-actions/.github/workflows/test-frontend.yaml@main
     with:
-      deploy_name_space: ${{ needs.print.outputs.deploy_name_space }} 
+      deploy_name_space: ${{ needs.print.outputs.deploy_name_space }}
+    secrets: 
       kubeconfig: ${{ secrets.TEST }}
 
 
